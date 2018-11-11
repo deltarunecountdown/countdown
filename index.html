@@ -1,14 +1,25 @@
 <head>
-<style>
-body {
-    background-color: black;
-}
-.b1 {
-  color:white;
-}
-</style>
-  
+
 </head>
 <body>
-  <b1>TEST</b1>
+  <h1>UNOFFICIAL UNDERTALE 2 COUNTDOWN TIMER</h1>
+  <p1>(Expected release date: November 1, 2025)</p1></br>
+  <p1>(Based on "seven years" tweet.)</p1>
+  <h1 id="time"></h1>
+
+<script>
+	window.setTimeout("update()",1000);
+	
+	
+	
+	function update(){
+		window.setTimeout("update()",1000);
+		var d=new Date();
+		var t=1761955200000-d.getTime();
+		var text="Years: "+String(t/31540000000);
+		document.getElementById("time").innerHTML=text;
+		console.log(d.getTime())
+	}
+</script>
+	
 </body>
